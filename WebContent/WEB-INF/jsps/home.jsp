@@ -13,5 +13,15 @@ Hello!
 Session: <%= session.getAttribute("name") %>
 </p>
 
+<p>
+Request: <%= request.getAttribute("name") %>
+</p>
+
+<!-- Expression Language -->
+<p>
+Request (using expression language): ${name}
+</p>
+
+
 </body>
 </html>
