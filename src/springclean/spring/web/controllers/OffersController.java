@@ -12,12 +12,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class OffersController {
 	
-	//@RequestMapping("/")
-	// public String showHome(HttpSession session) {
+/*	@RequestMapping("/")
+	 public String showHome(HttpSession session) {
 		
-	//	session.setAttribute("name", "Boris");
-	//  return "home"; // what kind of view to use
-	//  }
+		session.setAttribute("name", "Boris");
+	  return "home"; // what kind of view to use
+	  } */
 	
 	/*
 	@RequestMapping("/")
@@ -29,10 +29,22 @@ public class OffersController {
 		return mv;
 	} */
 	
+	
+	/*
 	@RequestMapping("/")
 	public String showHome(Model model) {
 		
 		model.addAttribute("name", "Tiffany");
 		return "home";
-	}
+	} */
+	
+	
+	@RequestMapping("/")
+	public String showHome(Model model) {
+		
+		model.addAttribute("name", "<b>Gandalf</b>");
+		return "home";
+	}	
+	
+	
 }
