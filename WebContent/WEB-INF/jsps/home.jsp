@@ -24,6 +24,7 @@ Request: <%= request.getAttribute("name") %>
 Request (using expression language): ${name}
 </p>
 
+<!-- Using JSTL -->
 <p>
 <c:out value="${name}"></c:out>
 </p>
