@@ -17,15 +17,21 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-@Component("offersDao")
+@Component("OffersDAO") // was offersDao
 public class OffersDAO {
 
 	private NamedParameterJdbcTemplate jdbc;
+	
+	public OffersDAO() {
+		System.out.println("Successfully loaded offers DAO");
+	}
+	
 
-	@Autowired
+	// @Autowired
 	public void setDataSource(DataSource jdbc) {
 		this.jdbc = new NamedParameterJdbcTemplate(jdbc);
 	}
+	
 
 	public List<Offer> getOffers() {
 
