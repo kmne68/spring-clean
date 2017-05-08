@@ -17,7 +17,7 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSourceUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-@Component("OffersDAO") // was offersDao
+@Component("offersDao") // tried OffersDAO
 public class OffersDAO {
 
 	private NamedParameterJdbcTemplate jdbc;

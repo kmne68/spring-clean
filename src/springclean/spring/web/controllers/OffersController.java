@@ -42,7 +42,7 @@ public class OffersController {
 	@RequestMapping("/")
 	public String showHome(Model model) {
 			
-		System.out.println("test");
+		//System.out.println("test");
 		
 		model.addAttribute("name", "<b>Gandalf</b>");
 		return "home";
