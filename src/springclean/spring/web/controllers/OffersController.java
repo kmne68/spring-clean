@@ -44,7 +44,7 @@ public class OffersController {
 			
 		//System.out.println("test");
 		
-		model.addAttribute("name", "<b>Gandalf</b>");
+		model.addAttribute("name", "Gandalf");
 		return "home";
 	}	
 	
