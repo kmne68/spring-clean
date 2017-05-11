@@ -40,7 +40,10 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<!-- param-value>/Users/kemery/Documents/springclean/src/springclean/spring/web/config/dao-context.xml</param-value -->
-		<param-value>classpath:springclean/spring/web/config/dao-context.xml</param-value>
+		<param-value>
+			classpath:springclean/spring/web/config/dao-context.xml
+			classpath:springclean/spring/web/config/service-context.xml
+		</param-value>
 	</context-param>
 
 </web-app>

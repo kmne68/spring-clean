@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     
@@ -10,33 +9,12 @@
 <title>Spring Clean</title>
 </head>
 <body>
-Hello!
 
-<p>
-Session: <%= session.getAttribute("name") %>
-</p>
-
-<p>
-Request: <%= request.getAttribute("name") %>
-</p>
-
-<!-- Expression Language -->
-<p>
-Request (using expression language): ${name}
-</p>
-
-<!-- Using JSTL -->
-<p>
-<c:out value="${name}"></c:out>
-</p>
-
-<sql:query var="rs" dataSource="jdbc/springtutorial">
-select id, name from offers
-</sql:query>
-
-<c:forEach var="row" items="${rs.rows}">
+<c:forEach var="row" items="${offers}">
     ID: ${row.id}<br/>
     Name: ${row.name}<br/>
+    Email: ${row.email}<br/>
+    Text: ${row.text}<br/>
 </c:forEach>
 
 
