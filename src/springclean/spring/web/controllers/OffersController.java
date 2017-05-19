@@ -84,14 +84,7 @@ public class OffersController {
 	@RequestMapping(value="/docreate", method=RequestMethod.POST)
 	public String doCreate(Model model, @Valid Offer offer, BindingResult result) {
 		
-		if(result.hasErrors()) {
-			System.out.println("Form cannot be validated.");
-			
-			List<ObjectError> errors = result.getAllErrors();
-			for (ObjectError error : errors) {
-				System.out.println(error.getDefaultMessage());
-			}
-			
+		if(result.hasErrors()) {			
 			return "createoffer";
 		} 		
 		return "offercreated";
