@@ -21,5 +21,11 @@ public class OffersService {
 	public void setOffersDao(OffersDAO offersDao) {
 		this.offersDao = offersDao;
 	}
+
+	public void create(Offer offer) {
+
+		offersDao.create(offer);
+		
+	}
 	
 }

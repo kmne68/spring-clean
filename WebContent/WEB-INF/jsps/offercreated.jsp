@@ -7,6 +7,6 @@
 <title>Offer Created</title>
 </head>
 <body>
-Offer Created.
+Offer Created: <a href="${pageContext.request.contextPath}/offers">Click here to view offers.</a>
 </body>
 </html>
