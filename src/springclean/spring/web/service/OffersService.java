@@ -27,5 +27,11 @@ public class OffersService {
 		offersDao.create(offer);
 		
 	}
+
+	public void throwTestException() {
+		
+		offersDao.getOffer(9999);
+		
+	}
 	
 }
